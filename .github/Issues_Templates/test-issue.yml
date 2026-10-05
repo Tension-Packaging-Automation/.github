@@ -1,0 +1,19 @@
+name: Test Organization Issue Template
+description: Test that organization-wide issue templates are working
+title: "[TEST] "
+labels: []
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        This is a test of the organization-wide issue template.
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Test Description
+      description: Enter anything here to test the form.
+      placeholder: Testing organization issue templates...
+    validations:
+      required: true
