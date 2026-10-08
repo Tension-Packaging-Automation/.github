@@ -1,7 +1,8 @@
 name: Feature / Enhancement
 description: Propose a small unplanned enhancement to existing functionality
 title: "[ENHANCEMENT] "
-labels: Feature/Enhancement
+type: Feature/Enhancement
+labels: 
   - Needs Triage
 assignees: []
 
