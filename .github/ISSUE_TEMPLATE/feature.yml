@@ -1,4 +1,3 @@
-```yaml
 name: Feature / Enhancement
 description: Propose a small unplanned enhancement to existing functionality
 title: "[ENHANCEMENT] "
@@ -117,4 +116,3 @@ body:
     attributes:
       label: Additional Context
       description: Add any other useful information.
-```
