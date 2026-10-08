@@ -1,0 +1,112 @@
+name: Bug
+description: Report a defect or unexpected system behavior
+title: "[BUG] "
+labels:
+  - bug
+  - needs-triage
+assignees: []
+
+body:
+  - type: textarea
+    id: summary
+    attributes:
+      label: Summary
+      description: Provide a clear description of the problem.
+    validations:
+      required: true
+
+  - type: input
+    id: affected-component
+    attributes:
+      label: Affected System / Component
+      description: Repository, application, PLC, machine, library, service, or other component affected.
+    validations:
+      required: true
+
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment
+      description: Provide any relevant environment information.
+      placeholder: |
+        Customer / Site:
+        Machine:
+        Software Version / Commit:
+        PLC Version:
+        Windows Version:
+        Hardware:
+
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Steps to Reproduce
+      description: If the issue cannot be reproduced consistently, describe when or how it has been observed.
+      value: |
+        1.
+        2.
+        3.
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected Behavior
+      description: Describe what should happen.
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual Behavior
+      description: Describe what actually happens.
+    validations:
+      required: true
+
+  - type: textarea
+    id: impact
+    attributes:
+      label: Impact
+      description: Describe the operational, customer, development, or system impact.
+
+  - type: textarea
+    id: workaround
+    attributes:
+      label: Workaround
+      description: Is there currently a workaround? If yes, describe it.
+
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Logs / Screenshots / Evidence
+      description: Attach or paste any useful logs, screenshots, errors, Event Viewer entries, PLC errors, stack traces, network captures, or other supporting information.
+
+  - type: dropdown
+    id: priority
+    attributes:
+      label: Proposed Priority
+      description: Select the proposed priority for this issue.
+      options:
+        - Critical
+        - High
+        - Medium
+        - Low
+    validations:
+      required: true
+
+  - type: textarea
+    id: priority-reason
+    attributes:
+      label: Priority Explanation
+      description: Explain the proposed priority if the impact is not obvious.
+
+  - type: textarea
+    id: related-work
+    attributes:
+      label: Related Work
+      description: Link any related Issues, Pull Requests, Commits, Projects, or customer support items.
+
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: Additional Context
+      description: Add anything else that may help investigate the issue.
