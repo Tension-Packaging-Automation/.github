@@ -1,0 +1,120 @@
+```yaml
+name: Feature / Enhancement
+description: Propose a small unplanned enhancement to existing functionality
+title: "[ENHANCEMENT] "
+labels:
+  - enhancement
+  - needs-triage
+assignees: []
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        This template is intended for small, unplanned enhancements discovered during existing work.
+
+        Large features, new products, major system changes, or future project work should go through the normal planning and prioritization process rather than becoming an unofficial GitHub Issues backlog.
+
+  - type: textarea
+    id: summary
+    attributes:
+      label: Summary
+      description: Describe the requested enhancement.
+    validations:
+      required: true
+
+  - type: textarea
+    id: problem-opportunity
+    attributes:
+      label: Problem / Opportunity
+      description: What problem would this enhancement solve, or what opportunity would it provide?
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposed-change
+    attributes:
+      label: Proposed Change
+      description: Describe the desired behavior or improvement.
+    validations:
+      required: true
+
+  - type: textarea
+    id: value-benefit
+    attributes:
+      label: Value / Benefit
+      description: Why would this change be useful?
+      placeholder: |
+        Examples:
+        - Improve reliability
+        - Reduce operator effort
+        - Improve troubleshooting
+        - Reduce development effort
+        - Improve maintainability
+        - Address customer feedback
+    validations:
+      required: true
+
+  - type: textarea
+    id: discovered-during
+    attributes:
+      label: Discovered During
+      description: Describe the work, testing, commissioning, support activity, or other effort where this enhancement was identified.
+
+  - type: textarea
+    id: scope
+    attributes:
+      label: Scope
+      description: Describe what should be included.
+    validations:
+      required: true
+
+  - type: textarea
+    id: out-of-scope
+    attributes:
+      label: Out of Scope
+      description: Identify anything that should specifically not be included so this does not unintentionally become a larger project.
+
+  - type: textarea
+    id: acceptance-criteria
+    attributes:
+      label: Acceptance Criteria
+      description: What needs to be true for this enhancement to be considered complete?
+      value: |
+        - [ ] 
+        - [ ] 
+        - [ ] 
+    validations:
+      required: true
+
+  - type: dropdown
+    id: priority
+    attributes:
+      label: Proposed Priority
+      description: Select the proposed priority for this enhancement.
+      options:
+        - Critical
+        - High
+        - Medium
+        - Low
+    validations:
+      required: true
+
+  - type: textarea
+    id: priority-explanation
+    attributes:
+      label: Priority Explanation
+      description: Explain the proposed priority if needed.
+
+  - type: textarea
+    id: related-work
+    attributes:
+      label: Related Work
+      description: Link any related Issues, Pull Requests, Commits, or Projects.
+
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: Additional Context
+      description: Add any other useful information.
+```
