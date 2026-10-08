@@ -1,9 +1,9 @@
 name: Tech Debt
 description: Document technical debt or an engineering improvement that should be addressed later
 title: "[TECH DEBT] "
+type: Tech Debt
 labels:
-  - tech-debt
-  - needs-triage
+  - Needs Triage
 assignees: []
 
 body:
