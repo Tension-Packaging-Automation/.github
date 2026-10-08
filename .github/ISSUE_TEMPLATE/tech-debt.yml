@@ -1,0 +1,102 @@
+name: Tech Debt
+description: Document technical debt or an engineering improvement that should be addressed later
+title: "[TECH DEBT] "
+labels:
+  - tech-debt
+  - needs-triage
+assignees: []
+
+body:
+  - type: textarea
+    id: summary
+    attributes:
+      label: Summary
+      description: Describe the technical debt or engineering deficiency.
+    validations:
+      required: true
+
+  - type: input
+    id: affected-component
+    attributes:
+      label: Affected System / Component
+      description: Repository, application, PLC, library, service, or component affected.
+    validations:
+      required: true
+
+  - type: textarea
+    id: current-state
+    attributes:
+      label: Current State
+      description: Describe how the system currently works and what is undesirable about the current implementation.
+    validations:
+      required: true
+
+  - type: textarea
+    id: why-address
+    attributes:
+      label: Why This Should Be Addressed
+      description: Describe the risk, cost, or limitation created by leaving this as-is.
+      placeholder: |
+        Examples:
+        - Maintainability
+        - Reliability
+        - Performance
+        - Unsupported technology
+        - Development complexity
+        - Repeated troubleshooting
+        - Missing testing
+        - Temporary workaround
+        - Architecture limitations
+    validations:
+      required: true
+
+  - type: textarea
+    id: why-not-now
+    attributes:
+      label: Why It Is Not Being Fixed Now
+      description: Explain why this work cannot reasonably be completed as part of the current effort.
+    validations:
+      required: true
+
+  - type: textarea
+    id: recommended-approach
+    attributes:
+      label: Recommended Approach
+      description: If known, describe the proposed solution or direction. A complete design is not required.
+
+  - type: textarea
+    id: risk-of-delaying
+    attributes:
+      label: Risk of Delaying
+      description: Describe what could happen if this remains unresolved.
+
+  - type: dropdown
+    id: priority
+    attributes:
+      label: Proposed Priority
+      description: Select the proposed priority for this technical debt.
+      options:
+        - Critical
+        - High
+        - Medium
+        - Low
+    validations:
+      required: true
+
+  - type: textarea
+    id: priority-explanation
+    attributes:
+      label: Priority Explanation
+      description: Explain the proposed priority if needed.
+
+  - type: textarea
+    id: related-work
+    attributes:
+      label: Related Work
+      description: Link any related Issues, Pull Requests, Commits, or Projects.
+
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: Additional Context
+      description: Add any other useful technical information.
