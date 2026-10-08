@@ -1,9 +1,9 @@
 name: Bug
 description: Report a defect or unexpected system behavior
 title: "[BUG] "
+type: Bug
 labels:
-  - bug
-  - needs-triage
+  - Needs Triage
 assignees: []
 
 body:
